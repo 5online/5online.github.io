@@ -10,10 +10,15 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
     <link rel="stylesheet" href="/link/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
 
+<div class="loader-container">
+        <div class="loader"></div>
+    </div>
 
-    
+ 
 
     <!-- Bootstrap core CSS -->
 <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -37,12 +42,15 @@
     
   </head>
   <body>
-    
+    <div class="loader-container">
+      <div class="loader"></div>
+  </div>
     <div class="container">
       <header class="d-flex justify-content-center py-3">
         <ul class="nav nav-pills">
           <li class="nav-item"><a href="/index.html" class="nav-link active" aria-current="page">Главная</a></li>
-          <li class="nav-item"><a href="/price.html" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="/price.html" class="nav-link">Читы</a></li>
+          <li class="nav-item"><a href="/shop.html" class="nav-link">Игровая валюта</a></li>
         </ul>
       </header>
     </div>
@@ -52,10 +60,11 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 style="color: red;" class="fw-light">5ONLINE</h1>
+        <a style="text-decoration: none;" href="/"><h1 class="fw-light namesite">5ONLINE</h1></a>
         <p style="color: #ffffff;" class="lead">Не трать время на фарм!</p>
         <p>
-          <a href="/price.html" class="btn btn-primary my-2">Не тратить время</a>
+          <a href="/price.html" class="btn btn-primary my-2">Купить чит</a>
+          <a href="/shop.html" class="btn btn-success my-2">Купить игровую валюту</a>
         </p>
       </div>
     </div>
@@ -66,7 +75,18 @@
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
-          <div  class="card shadow-sm">
+          <div style="background-color: white;">
+           
+              <img class="bd-placeholder-img card-img-top" src="/img/news4.jpg" alt="">
+            <div  class="card-body">
+              <p class="card-text">Появился магазин игровой валюты. Но к сожалению он пока не доступен. Магазин будет открыт с 1 декабря.</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div style="background-color: white;">
            
               <img class="bd-placeholder-img card-img-top" src="/img/1news.jpg" alt="">
             <div  class="card-body">
@@ -77,7 +97,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
+          <div style="background-color: white;">
             <img class="bd-placeholder-img card-img-top" src="/img/2news.jpg" alt="">
 
             <div class="card-body">
@@ -88,7 +108,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
+          <div style="background-color: white;">
             <img class="bd-placeholder-img card-img-top" src="/img/3news.jpg" alt="">
 
             <div class="card-body">
@@ -104,11 +124,17 @@
     </div>
   </div>
 
-    
+  <script>
+    $(window).on("load",function(){
+        $(".loader-container").fadeOut(1000);
+    });
+</script>
+
 
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-      
+
+  </div>
   </body>
 </html>
