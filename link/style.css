@@ -1,5 +1,7 @@
 body {
-    background-image: url('/img/img.jpg');
+    background-image: url('/img/img.png');
+    background-attachment: fixed;
+    
     
 }
 
@@ -48,6 +50,7 @@ body {
    color: yellow;
    transition: 1.1s;
 }
+
 
 a {
     text-decoration: none;
